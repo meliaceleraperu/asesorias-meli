@@ -1161,7 +1161,7 @@
     .modal-body { padding: 20px; max-height: 75vh; }
   }
 </style>
-<script>(function(){function _ok(r,onOk){return r.json().then(function(b){if(!r.ok)throw b;onOk(b);return b;});}window.GRID=window.GRID||{};window.GRID.docId="01KS5HXBFF8B1DCEB95SCSFB2F";window.GRID._stateUpdatedAt='';window.GRID._stateUpdatedAtByName=window.GRID._stateUpdatedAtByName||{};window.GRID.states={get:function(name){var n=String(name||'').trim();if(!n)return Promise.reject({error:'validation_error',detail:'state name is required'});return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/states/'+encodeURIComponent(n)).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAtByName[n]=b.updated_at||'';});});},set:function(name,data,ifUpdatedAt){var n=String(name||'').trim();if(!n)return Promise.reject({error:'validation_error',detail:'state name is required'});return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/states/'+encodeURIComponent(n),{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({state:data,if_updated_at:(typeof ifUpdatedAt==='string'?ifUpdatedAt:(window.GRID._stateUpdatedAtByName[n]||''))})}).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAtByName[n]=b.updated_at||'';});});},patch:function(name,patchData,ifUpdatedAt){var n=String(name||'').trim();if(!n)return Promise.reject({error:'validation_error',detail:'state name is required'});return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/states/'+encodeURIComponent(n),{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({patch:patchData,if_updated_at:(typeof ifUpdatedAt==='string'?ifUpdatedAt:(window.GRID._stateUpdatedAtByName[n]||''))})}).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAtByName[n]=b.updated_at||'';});});}};window.GRID.state={get:function(){return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/state').then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAt=b.updated_at||'';});});},set:function(data,ifUpdatedAt){return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/state',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({state:data,if_updated_at:(typeof ifUpdatedAt==='string'?ifUpdatedAt:(window.GRID._stateUpdatedAt||''))})}).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAt=b.updated_at||'';});});},patch:function(patchData,ifUpdatedAt){return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/state',{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({patch:patchData,if_updated_at:(typeof ifUpdatedAt==='string'?ifUpdatedAt:(window.GRID._stateUpdatedAt||''))})}).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAt=b.updated_at||'';});});}};}());</script><style id="gridHighlightStyles">.grid-highlight{background:rgba(52,131,250,.15);border-bottom:2px solid rgba(52,131,250,.5);cursor:pointer;border-radius:2px;transition:background .2s}.grid-highlight:hover{background:rgba(52,131,250,.3)}</style><style id="gridPinStyles">.grid-annot-pin{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;margin-left:2px;background:#3483fa;color:#fff;border-radius:50%;cursor:pointer;vertical-align:middle;box-shadow:0 2px 8px rgba(52,131,250,.3);transition:transform .2s cubic-bezier(.175,.885,.32,1.275),box-shadow .2s;position:relative;z-index:10;animation:gpinPop .3s cubic-bezier(.175,.885,.32,1.275)}.grid-annot-pin:hover{transform:scale(1.15);box-shadow:0 4px 12px rgba(52,131,250,.5)}.grid-annot-pin svg{width:12px;height:12px}.grid-annot-pin-resolved{background:#30d158;opacity:.7;box-shadow:0 2px 8px rgba(48,209,88,.3)}.grid-annot-pin-resolved:hover{opacity:1;box-shadow:0 4px 12px rgba(48,209,88,.5)}@keyframes gpinPop{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}</style></head>
+<script>(function(){function _ok(r,onOk){return r.json().then(function(b){if(!r.ok)throw b;onOk(b);return b;});}window.GRID=window.GRID||{};window.GRID.docId="01KS5HXBFF8B1DCEB95SCSFB2F";window.GRID._stateUpdatedAt='';window.GRID._stateUpdatedAtByName=window.GRID._stateUpdatedAtByName||{};window.GRID.states={get:function(name){var n=String(name||'').trim();if(!n)return Promise.reject({error:'validation_error',detail:'state name is required'});return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/states/'+encodeURIComponent(n)).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAtByName[n]=b.updated_at||'';});});},set:function(name,data,ifUpdatedAt){var n=String(name||'').trim();if(!n)return Promise.reject({error:'validation_error',detail:'state name is required'});return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/states/'+encodeURIComponent(n),{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({state:data,if_updated_at:(typeof ifUpdatedAt==='string'?ifUpdatedAt:(window.GRID._stateUpdatedAtByName[n]||''))})}).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAtByName[n]=b.updated_at||'';});});},patch:function(name,patchData,ifUpdatedAt){var n=String(name||'').trim();if(!n)return Promise.reject({error:'validation_error',detail:'state name is required'});return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/states/'+encodeURIComponent(n),{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({patch:patchData,if_updated_at:(typeof ifUpdatedAt==='string'?ifUpdatedAt:(window.GRID._stateUpdatedAtByName[n]||''))})}).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAtByName[n]=b.updated_at||'';});});}};window.GRID.state={get:function(){return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/state').then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAt=b.updated_at||'';});});},set:function(data,ifUpdatedAt){return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/state',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({state:data,if_updated_at:(typeof ifUpdatedAt==='string'?ifUpdatedAt:(window.GRID._stateUpdatedAt||''))})}).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAt=b.updated_at||'';});});},patch:function(patchData,ifUpdatedAt){return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/state',{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({patch:patchData,if_updated_at:(typeof ifUpdatedAt==='string'?ifUpdatedAt:(window.GRID._stateUpdatedAt||''))})}).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAt=b.updated_at||'';});});}};}());</script><style id="gridHighlightStyles">.grid-highlight{background:rgba(52,131,250,.15);border-bottom:2px solid rgba(52,131,250,.5);cursor:pointer;border-radius:2px;transition:background .2s}.grid-highlight:hover{background:rgba(52,131,250,.3)}</style><style id="gridPinStyles">.grid-annot-pin{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;margin-left:2px;background:#3483fa;color:#fff;border-radius:50%;cursor:pointer;vertical-align:middle;box-shadow:0 2px 8px rgba(52,131,250,.3);transition:transform .2s cubic-bezier(.175,.885,.32,1.275),box-shadow .2s;position:relative;z-index:10;animation:gpinPop .3s cubic-bezier(.175,.885,.32,1.275)}.grid-annot-pin:hover{transform:scale(1.15);box-shadow:0 4px 12px rgba(52,131,250,.5)}.grid-annot-pin svg{width:12px;height:12px}.grid-annot-pin-resolved{background:#30d158;opacity:.7;box-shadow:0 2px 8px rgba(48,209,88,.3)}.grid-annot-pin-resolved:hover{opacity:1;box-shadow:0 4px 12px rgba(48,209,88,.5)}@keyframes gpinPop{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}</style><script>(function(){function _ok(r,onOk){return r.json().then(function(b){if(!r.ok)throw b;onOk(b);return b;});}window.GRID=window.GRID||{};window.GRID.docId="01KS5HXBFF8B1DCEB95SCSFB2F";window.GRID._stateUpdatedAt='';window.GRID._stateUpdatedAtByName=window.GRID._stateUpdatedAtByName||{};window.GRID.states={get:function(name){var n=String(name||'').trim();if(!n)return Promise.reject({error:'validation_error',detail:'state name is required'});return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/states/'+encodeURIComponent(n)).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAtByName[n]=b.updated_at||'';});});},set:function(name,data,ifUpdatedAt){var n=String(name||'').trim();if(!n)return Promise.reject({error:'validation_error',detail:'state name is required'});return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/states/'+encodeURIComponent(n),{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({state:data,if_updated_at:(typeof ifUpdatedAt==='string'?ifUpdatedAt:(window.GRID._stateUpdatedAtByName[n]||''))})}).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAtByName[n]=b.updated_at||'';});});},patch:function(name,patchData,ifUpdatedAt){var n=String(name||'').trim();if(!n)return Promise.reject({error:'validation_error',detail:'state name is required'});return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/states/'+encodeURIComponent(n),{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({patch:patchData,if_updated_at:(typeof ifUpdatedAt==='string'?ifUpdatedAt:(window.GRID._stateUpdatedAtByName[n]||''))})}).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAtByName[n]=b.updated_at||'';});});}};window.GRID.state={get:function(){return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/state').then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAt=b.updated_at||'';});});},set:function(data,ifUpdatedAt){return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/state',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({state:data,if_updated_at:(typeof ifUpdatedAt==='string'?ifUpdatedAt:(window.GRID._stateUpdatedAt||''))})}).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAt=b.updated_at||'';});});},patch:function(patchData,ifUpdatedAt){return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/state',{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({patch:patchData,if_updated_at:(typeof ifUpdatedAt==='string'?ifUpdatedAt:(window.GRID._stateUpdatedAt||''))})}).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAt=b.updated_at||'';});});}};}());</script><script>(function(){function _ok(r,onOk){return r.json().then(function(b){if(!r.ok)throw b;onOk(b);return b;});}window.GRID=window.GRID||{};window.GRID.docId="01KS5HXBFF8B1DCEB95SCSFB2F";window.GRID._stateUpdatedAt='';window.GRID._stateUpdatedAtByName=window.GRID._stateUpdatedAtByName||{};window.GRID.states={get:function(name){var n=String(name||'').trim();if(!n)return Promise.reject({error:'validation_error',detail:'state name is required'});return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/states/'+encodeURIComponent(n)).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAtByName[n]=b.updated_at||'';});});},set:function(name,data,ifUpdatedAt){var n=String(name||'').trim();if(!n)return Promise.reject({error:'validation_error',detail:'state name is required'});return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/states/'+encodeURIComponent(n),{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({state:data,if_updated_at:(typeof ifUpdatedAt==='string'?ifUpdatedAt:(window.GRID._stateUpdatedAtByName[n]||''))})}).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAtByName[n]=b.updated_at||'';});});},patch:function(name,patchData,ifUpdatedAt){var n=String(name||'').trim();if(!n)return Promise.reject({error:'validation_error',detail:'state name is required'});return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/states/'+encodeURIComponent(n),{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({patch:patchData,if_updated_at:(typeof ifUpdatedAt==='string'?ifUpdatedAt:(window.GRID._stateUpdatedAtByName[n]||''))})}).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAtByName[n]=b.updated_at||'';});});}};window.GRID.state={get:function(){return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/state').then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAt=b.updated_at||'';});});},set:function(data,ifUpdatedAt){return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/state',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({state:data,if_updated_at:(typeof ifUpdatedAt==='string'?ifUpdatedAt:(window.GRID._stateUpdatedAt||''))})}).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAt=b.updated_at||'';});});},patch:function(patchData,ifUpdatedAt){return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/state',{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({patch:patchData,if_updated_at:(typeof ifUpdatedAt==='string'?ifUpdatedAt:(window.GRID._stateUpdatedAt||''))})}).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAt=b.updated_at||'';});});}};}());</script></head>
 <body style="outline: none;">
 
 <!-- ===== NAV ===== -->
@@ -1351,8 +1351,41 @@
           <div style="font-size:13px; color:var(--ml-text-muted); margin-top:2px;">Vendedores que facturan más de S/ 10,000/mes</div>
         </div>
         <div class="tier-desc">Asesoría 360° para acelerar las palancas tácticas: catálogo, Flex, reputación y Ads.</div>
-        <div class="tier-price" style="color: rgb(48, 196, 28);">S/ 999<small>/mes</small></div>
-        <div class="tier-price-sub">Tarifa única flat</div>
+        <!-- Nueva estructura 4 tiers - ago 2026 -->
+        <div style="margin: 10px 0 12px; background: rgba(48,196,28,0.07); border: 1px solid rgba(48,196,28,0.25); border-radius: 10px; overflow: hidden;">
+          <div style="padding: 8px 14px 4px; font-size: 11px; font-weight: 700; color: rgb(48,196,28); text-transform: uppercase; letter-spacing: 0.06em; border-bottom: 1px solid rgba(48,196,28,0.15);">
+            Precio según ventas promedio últimos 3 meses
+          </div>
+          <table style="width:100%; border-collapse:collapse; font-size:13px;">
+            <tr style="border-bottom:1px solid rgba(48,196,28,0.1);">
+              <td style="padding:6px 14px; color:var(--ml-text-muted);">Tier 4 — <b>Básico</b><br><span style="font-size:11px;">hasta S/ 25,000</span></td>
+              <td style="padding:6px 14px; text-align:right; font-weight:700; color:var(--ml-text);">S/ 249<small style="font-weight:400; color:var(--ml-text-muted);">/mes</small></td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(48,196,28,0.1);">
+              <td style="padding:6px 14px; color:var(--ml-text-muted);">Tier 3 — <b>Crecimiento</b><br><span style="font-size:11px;">S/ 25,001 – S/ 50,000</span></td>
+              <td style="padding:6px 14px; text-align:right; font-weight:700; color:var(--ml-text);">S/ 499<small style="font-weight:400; color:var(--ml-text-muted);">/mes</small></td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(48,196,28,0.1);">
+              <td style="padding:6px 14px; color:var(--ml-text-muted);">Tier 2 — <b>Avanzado</b><br><span style="font-size:11px;">S/ 50,001 – S/ 75,000</span></td>
+              <td style="padding:6px 14px; text-align:right; font-weight:700; color:var(--ml-text);">S/ 749<small style="font-weight:400; color:var(--ml-text-muted);">/mes</small></td>
+            </tr>
+            <tr>
+              <td style="padding:6px 14px; color:var(--ml-text-muted);">Tier 1 — <b>Premium</b><br><span style="font-size:11px;">más de S/ 75,000</span></td>
+              <td style="padding:6px 14px; text-align:right; font-weight:700; color:rgb(48,196,28);">S/ 999<small style="font-weight:400; color:var(--ml-text-muted);">/mes</small></td>
+            </tr>
+          </table>
+          <div style="padding:10px 14px 12px; border-top:1px solid rgba(48,196,28,0.15);">
+            <p style="margin:0 0 8px; font-size:12px; color:var(--ml-text-muted);">
+              El tier se asigna al inicio del programa y se mantiene por <strong style="color:var(--ml-text);">3 meses</strong> aunque tu nivel de ventas varíe durante ese período.
+            </p>
+            <p style="margin:0 0 8px; font-size:12px; color:var(--ml-text-muted);">
+              A mayor nivel de ventas, mayor es la complejidad de tu operación y el foco personalizado que recibe tu cuenta: <strong style="color:var(--ml-text);">el tier no solo refleja tu volumen, sino el nivel de atención, estrategia y seguimiento dedicado a tu negocio.</strong>
+            </p>
+            <p style="margin:0; font-size:11px; color:var(--ml-text-muted);">
+              El cobro se descuenta automáticamente cada mes desde tu cuenta de Mercado Pago. <em>Precios incluyen IGV.</em>
+            </p>
+          </div>
+        </div>
         <div class="tier-price-sub" style="font-size: 14px;"><b style="font-size: 14px;">Todo lo de ESENCIAL MÁS</b></div>
 
         <div class="tier-divider"></div>
@@ -1685,7 +1718,7 @@
       <div class="how-step">
         <div class="how-num">1</div>
         <h3>Diagnóstico de tu cuenta</h3>
-        <p>Revisamos tu volumen, categorías y desempeño. Te ubicamos en el nivel adecuado según tu NMV mensual.</p>
+        <p>Revisamos tu volumen, categorías y desempeño. Te ubicamos en el nivel adecuado según tu volumen de ventas mensual.</p>
       </div>
       <div class="how-step">
         <div class="how-num">2</div>
@@ -1789,7 +1822,7 @@
           <tr>
             <th>Atributo</th>
             <th style="font-size: 18px;">Esencial<small>Gratuito</small></th>
-            <th style="font-size: 18px;">Impacto<small style="font-weight: 800; font-size: 14px;">S/ 999 / mes</small><small style="color: rgb(255, 255, 255); font-weight: 700; font-size: 12px; display: block;">Vendedores que venden o facturan más de S/ 10,000/mes</small></th>
+            <th style="font-size: 18px;">Impacto<small style="font-weight: 800; font-size: 14px;">S/ 249 – S/ 999 / mes</small><small style="color: rgb(255, 255, 255); font-weight: 700; font-size: 12px; display: block;">4 tiers según ventas promedio · desde S/ 10,000/mes</small></th>
             <th style="font-size: 18px;">Meli Pro<small style="font-weight: 800; font-size: 14px;">desde S/ 3,220 / mes</small><small style="color: var(--ml-text-muted); font-weight: 800; font-size: 12px; display: block;">Vendedores que venden o facturan más de S/ 100,000/mes</small></th>
           </tr>
         </thead>
@@ -1827,7 +1860,7 @@
           <tr class="price-row">
             <td>Precio</td>
             <td>Gratuito</td>
-            <td>S/ 999 / mes</td>
+            <td>S/ 249 – S/ 999 / mes<br><small style="color:var(--ml-text-muted); font-size:11px;">4 tiers según ventas promedio</small></td>
             <td>desde S/ 3,220 / mes</td>
           </tr>
         </tbody>
@@ -1863,11 +1896,11 @@
           </div>
           <div class="resumen-tier">
             <h3>Impacto</h3>
-            <div class="price">S/ 999 / mes</div>
+            <div class="price">S/ 249 – S/ 999 / mes</div>
             <div class="tagline">Aceleración táctica</div>
             <div style="margin-top:8px; padding:5px 10px; background:rgba(48,196,28,0.12); border-left:3px solid rgb(48,196,28); border-radius:5px;">
-              <div style="font-size:13px; font-weight:700; color:rgb(48,196,28);">Más de S/ 10,000/mes</div>
-              <div style="font-size:11px; color:var(--ml-text-muted);">Vendedores que facturan más de S/ 10,000/mes</div>
+              <div style="font-size:13px; font-weight:700; color:rgb(48,196,28);">4 tiers según ventas promedio</div>
+              <div style="font-size:11px; color:var(--ml-text-muted);">Precio bloqueado por 3 meses · desde S/ 10,000/mes</div>
             </div>
           </div>
           <div class="resumen-tier featured">
@@ -2581,7 +2614,7 @@
       <div class="faq-item">
         <div class="faq-q">¿Cómo sé qué nivel de asesoría me corresponde?</div>
         <div class="faq-a">
-          El criterio principal es tu NMV mensual. Si vendes hasta S/ 5,000 al mes el nivel adecuado es Esencial,
+          El criterio principal es tu volumen de ventas mensual. Si vendes hasta S/ 5,000 al mes el nivel adecuado es Esencial,
           si vendes de S/ 5,000 a S/ 150,000 al mes el nivel adecuado es Impacto, y más de S/ 150,000 es Meli Pro. La evaluación se hace trimestralmente y el traspaso
           puede ser ascendente (si tu negocio crece) o descendente (si la caída es sostenida).
         </div>
@@ -2902,4 +2935,214 @@
 </script>
 
 
+<script>
+/* Grid: only allow approved Grid domains to open unsandboxed tabs */
+(function(){
+  var allowedHosts = ["figma.com", "www.figma.com", "furydocs.io", "zeroheight.com", "google.com", "docs.google.com", "meet.google.com", "grid.adminml.com", "grid-artifacts.adminml.com", "mercadolibre.atlassian.net", "mercadolibre-opsgenie.atlassian.net", "app.datadoghq.com", "grafana-service.furycloud.io", "web.furycloud.io", "nasdaq-meli.app.opsgenie.com", "meli.enterprise.slack.com"];
+  var allowedSuffixes = [".adminml.com", ".atlassian.net", ".google.com", ".furycloud.io", ".melioffice.com", ".melisystems.com"];
+  var allowedPathPrefixes = {"github.com": ["/melisource/"], "www.github.com": ["/melisource/"]};
+  function normalizeUrl(rawUrl){
+    try {
+      return new URL(String(rawUrl || ""), window.location.href);
+    } catch (_err) {
+      return null;
+    }
+  }
+  function isAllowedUrl(rawUrl){
+    var parsed = normalizeUrl(rawUrl);
+    if(!parsed) return false;
+    if(parsed.protocol === "slack:") return true;
+    if(parsed.protocol !== "https:") return false;
+    var h = (parsed.hostname || "").toLowerCase();
+    if(!h) return false;
+    if(allowedHosts.indexOf(h) !== -1) return true;
+    for(var i = 0; i < allowedSuffixes.length; i++){
+      var s = allowedSuffixes[i];
+      if(h === s.slice(1) || (h.length > s.length && h.slice(-s.length) === s)) return true;
+    }
+    var pathPrefixes = allowedPathPrefixes[h];
+    if(pathPrefixes){
+      var p = parsed.pathname || "/";
+      for(var j = 0; j < pathPrefixes.length; j++){
+        if(p.slice(0, pathPrefixes[j].length) === pathPrefixes[j]) return true;
+      }
+    }
+    return false;
+  }
+  function requestParentPopup(rawUrl){
+    var parsed = normalizeUrl(rawUrl);
+    if(!parsed || !window.parent || window.parent === window) return false;
+    try {
+      window.parent.postMessage({type: "grid-open-safe-popup", url: parsed.href}, window.location.origin);
+      return true;
+    } catch (_err) {
+      return false;
+    }
+  }
+
+  document.addEventListener("click", function(event){
+    var target = event.target;
+    var anchor = target && target.closest ? target.closest("a[href]") : null;
+    if(!anchor) return;
+    var href = anchor.getAttribute("href") || "";
+    if(!href || href.charAt(0) === "#") return;
+    var opensNewTab = anchor.target === "_blank" || event.ctrlKey || event.metaKey || event.button === 1;
+    if(!opensNewTab) return;
+    if(!isAllowedUrl(href)) {
+      event.preventDefault();
+      event.stopPropagation();
+      return;
+    }
+    if(requestParentPopup(href)) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+  }, true);
+
+  var nativeOpen = window.open;
+  window.open = function(rawUrl, target, features){
+    if(!isAllowedUrl(rawUrl)) return null;
+    if(requestParentPopup(rawUrl)) return null;
+    return nativeOpen ? nativeOpen.call(window, normalizeUrl(rawUrl).href, target, features) : null;
+  };
+})();
+</script>
+<script>
+/* Grid: sync iframe URL mutations to parent address bar */
+(function(){
+  function notifyParent(search, hash){
+    if(!window.parent || window.parent === window) return;
+    try{
+      window.parent.postMessage(
+        {type:"grid-url-sync", search:search, hash:hash},
+        window.location.origin
+      );
+    }catch(_){}
+  }
+  function parseAndNotify(url){
+    try{
+      var p = new URL(String(url), window.location.href);
+      notifyParent(p.search, p.hash);
+    }catch(_){}
+  }
+  var _push = history.pushState.bind(history);
+  var _replace = history.replaceState.bind(history);
+  history.pushState = function(state, title, url){
+    _push(state, title, url);
+    if(url != null) parseAndNotify(url);
+  };
+  history.replaceState = function(state, title, url){
+    _replace(state, title, url);
+    if(url != null) parseAndNotify(url);
+  };
+  window.addEventListener("hashchange", function(){
+    notifyParent(window.location.search, window.location.hash);
+  });
+})();
+</script>
+<script>
+/* Grid: only allow approved Grid domains to open unsandboxed tabs */
+(function(){
+  var allowedHosts = ["figma.com", "www.figma.com", "furydocs.io", "zeroheight.com", "google.com", "docs.google.com", "meet.google.com", "grid.adminml.com", "grid-artifacts.adminml.com", "mercadolibre.atlassian.net", "mercadolibre-opsgenie.atlassian.net", "app.datadoghq.com", "grafana-service.furycloud.io", "web.furycloud.io", "nasdaq-meli.app.opsgenie.com", "meli.enterprise.slack.com"];
+  var allowedSuffixes = [".adminml.com", ".atlassian.net", ".google.com", ".furycloud.io", ".melioffice.com", ".melisystems.com"];
+  var allowedPathPrefixes = {"github.com": ["/melisource/"], "www.github.com": ["/melisource/"]};
+  function normalizeUrl(rawUrl){
+    try {
+      return new URL(String(rawUrl || ""), window.location.href);
+    } catch (_err) {
+      return null;
+    }
+  }
+  function isAllowedUrl(rawUrl){
+    var parsed = normalizeUrl(rawUrl);
+    if(!parsed) return false;
+    if(parsed.protocol === "slack:") return true;
+    if(parsed.protocol !== "https:") return false;
+    var h = (parsed.hostname || "").toLowerCase();
+    if(!h) return false;
+    if(allowedHosts.indexOf(h) !== -1) return true;
+    for(var i = 0; i < allowedSuffixes.length; i++){
+      var s = allowedSuffixes[i];
+      if(h === s.slice(1) || (h.length > s.length && h.slice(-s.length) === s)) return true;
+    }
+    var pathPrefixes = allowedPathPrefixes[h];
+    if(pathPrefixes){
+      var p = parsed.pathname || "/";
+      for(var j = 0; j < pathPrefixes.length; j++){
+        if(p.slice(0, pathPrefixes[j].length) === pathPrefixes[j]) return true;
+      }
+    }
+    return false;
+  }
+  function requestParentPopup(rawUrl){
+    var parsed = normalizeUrl(rawUrl);
+    if(!parsed || !window.parent || window.parent === window) return false;
+    try {
+      window.parent.postMessage({type: "grid-open-safe-popup", url: parsed.href}, window.location.origin);
+      return true;
+    } catch (_err) {
+      return false;
+    }
+  }
+
+  document.addEventListener("click", function(event){
+    var target = event.target;
+    var anchor = target && target.closest ? target.closest("a[href]") : null;
+    if(!anchor) return;
+    var href = anchor.getAttribute("href") || "";
+    if(!href || href.charAt(0) === "#") return;
+    var opensNewTab = anchor.target === "_blank" || event.ctrlKey || event.metaKey || event.button === 1;
+    if(!opensNewTab) return;
+    if(!isAllowedUrl(href)) {
+      event.preventDefault();
+      event.stopPropagation();
+      return;
+    }
+    if(requestParentPopup(href)) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+  }, true);
+
+  var nativeOpen = window.open;
+  window.open = function(rawUrl, target, features){
+    if(!isAllowedUrl(rawUrl)) return null;
+    if(requestParentPopup(rawUrl)) return null;
+    return nativeOpen ? nativeOpen.call(window, normalizeUrl(rawUrl).href, target, features) : null;
+  };
+})();
+</script>
+<script>
+/* Grid: sync iframe URL mutations to parent address bar */
+(function(){
+  function notifyParent(search, hash){
+    if(!window.parent || window.parent === window) return;
+    try{
+      window.parent.postMessage(
+        {type:"grid-url-sync", search:search, hash:hash},
+        window.location.origin
+      );
+    }catch(_){}
+  }
+  function parseAndNotify(url){
+    try{
+      var p = new URL(String(url), window.location.href);
+      notifyParent(p.search, p.hash);
+    }catch(_){}
+  }
+  var _push = history.pushState.bind(history);
+  var _replace = history.replaceState.bind(history);
+  history.pushState = function(state, title, url){
+    _push(state, title, url);
+    if(url != null) parseAndNotify(url);
+  };
+  history.replaceState = function(state, title, url){
+    _replace(state, title, url);
+    if(url != null) parseAndNotify(url);
+  };
+  window.addEventListener("hashchange", function(){
+    notifyParent(window.location.search, window.location.hash);
+  });
+})();
+</script>
 </body></html>
