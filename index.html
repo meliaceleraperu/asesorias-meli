@@ -258,6 +258,16 @@
   .tier-card.essential .tier-tag { color: var(--ml-text-light); }
   .tier-card.impact .tier-tag { color: var(--ml-blue); }
   .tier-card.pro .tier-tag { color: #2D3277; }
+  .tier-level-badge {
+    display: inline-block;
+    background: var(--ml-bg-blue);
+    color: var(--ml-blue-dark);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+  }
   .tier-name {
     font-size: 28px;
     font-weight: 800;
@@ -1247,531 +1257,88 @@
 
       <!-- ESENCIAL -->
       <div class="tier-card essential">
-        <div class="tier-tag">Para empezar</div>
+        <span class="tier-level-badge">Nivel 1</span>
         <div class="tier-name" style="color: rgb(45, 57, 118);">Esencial</div>
         <div class="tier-desc">Autogestión asistida con acceso a la información clave para vender por tu cuenta.</div>
+        <div class="tier-divider"></div>
         <div class="tier-price">Gratis</div>
         <div class="tier-price-sub">Cupos limitados según postulación</div>
-
-        <div class="tier-divider"></div>
-
-        <div class="tier-paragraphs">
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Especialización del asesor y cartera</div>
-            <ul class="tier-attr-bullets">
-              <li>Analista Especializado multicategoría</li>
-              <li>150 cuentas por asesor</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Plan de Trabajo</div>
-            <ul class="tier-attr-bullets">
-              <li class="dim">Sólo gestión ante oportunidades y alertas de la cuenta</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Palancas Comerciales</div>
-            <ul class="tier-attr-bullets">
-              <li>Cupos en campañas sin diferenciación</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Pilotos y Lanzamientos</div>
-            <ul class="tier-attr-bullets">
-              <li class="dim">Sin prioridad</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Gestión de Problemas y CX</div>
-            <ul class="tier-attr-bullets">
-              <li>Gestión 100% del seller</li>
-              <li class="dim">Sin escalamiento de casos</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Seguimiento Logístico</div>
-            <ul class="tier-attr-bullets">
-              <li class="highlight">Recolecta gratuita de pedidos de tu almacén (a partir de 5 unidades diarias)</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Seguimiento Publicidad (Ads)</div>
-            <ul class="tier-attr-bullets">
-              <li class="dim">Sin sesiones dedicadas</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Seguimiento general de la cuenta</div>
-            <ul class="tier-attr-bullets">
-              <li>Contacto quincenal por mail</li>
-              <li>Reunión 1:1 ad-hoc según necesidad (alerta u oportunidad)</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Agenda de reunión</div>
-            <ul class="tier-attr-bullets">
-              <li>Revisión de alarmas u oportunidades</li>
-              <li>Soluciones y próximos pasos</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Reporting</div>
-            <ul class="tier-attr-bullets">
-              <li>Reporte semanal automatizado (ventas, visitas, conversión)</li>
-              <li class="dim">No es on-demand ni customizado</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Comunicación y disponibilidad</div>
-            <ul class="tier-attr-bullets">
-              <li>Mail y WhatsApp con asesor</li>
-              <li class="dim">SLA no definido</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">KPIs observados</div>
-            <ul class="tier-attr-bullets">
-              <li>NMV (venta)</li>
-              <li>Visitas, conversión y precio promedio</li>
-            </ul>
-          </div>
-        </div>
-
         <div class="tier-cta">
-          <a href="#" class="btn btn-outline">Postular a Esencial</a>
+          <a href="#comparativo" class="btn btn-outline">Postular a Esencial</a>
         </div>
       </div>
 
       <!-- IMPACTO -->
       <div class="tier-card impact">
-        <div class="tier-tag">Aceleración táctica</div>
+        <span class="tier-level-badge">Nivel 2</span>
         <div class="tier-name" style="color: rgb(48, 196, 28);">Impacto</div>
-        <div class="tier-threshold" style="margin: 6px 0 10px; padding: 7px 14px; background: rgba(48,196,28,0.10); border-left: 3px solid rgb(48,196,28); border-radius: 6px;">
-          <div style="font-size:14px; font-weight:700; color: rgb(48,196,28); letter-spacing:0.01em;">Vendedores que venden más de S/ 10,000/mes</div>
-        </div>
-        <div class="tier-desc"><strong style="color:var(--ml-text);">Asesoría 360° para acelerar las palancas tácticas: catálogo, Flex, reputación y Ads.</strong></div>
-        <!-- Nueva estructura 4 tiers - ago 2026 -->
-        <div style="margin: 10px 0 12px; background: rgba(48,196,28,0.07); border: 1px solid rgba(48,196,28,0.25); border-radius: 10px; overflow: hidden;">
-          <div style="padding: 8px 14px 4px; font-size: 11px; font-weight: 700; color: rgb(48,196,28); text-transform: uppercase; letter-spacing: 0.06em; border-bottom: 1px solid rgba(48,196,28,0.15);">
-            Precio según ventas promedio últimos 4 meses
-          </div>
-          <table style="width:100%; border-collapse:collapse; font-size:13px;">
-            <tr style="border-bottom:1px solid rgba(48,196,28,0.1);">
-              <td style="padding:6px 14px; color:var(--ml-text-muted);">Tier 4 — <b>Básico</b><br><span style="font-size:11px;">hasta S/ 25,000</span></td>
-              <td style="padding:6px 14px; text-align:right; font-weight:700; color:var(--ml-text);">S/ 249<small style="font-weight:400; color:var(--ml-text-muted);">/mes</small></td>
-            </tr>
-            <tr style="border-bottom:1px solid rgba(48,196,28,0.1);">
-              <td style="padding:6px 14px; color:var(--ml-text-muted);">Tier 3 — <b>Crecimiento</b><br><span style="font-size:11px;">S/ 25,001 – S/ 50,000</span></td>
-              <td style="padding:6px 14px; text-align:right; font-weight:700; color:var(--ml-text);">S/ 499<small style="font-weight:400; color:var(--ml-text-muted);">/mes</small></td>
-            </tr>
-            <tr style="border-bottom:1px solid rgba(48,196,28,0.1);">
-              <td style="padding:6px 14px; color:var(--ml-text-muted);">Tier 2 — <b>Avanzado</b><br><span style="font-size:11px;">S/ 50,001 – S/ 75,000</span></td>
-              <td style="padding:6px 14px; text-align:right; font-weight:700; color:var(--ml-text);">S/ 749<small style="font-weight:400; color:var(--ml-text-muted);">/mes</small></td>
-            </tr>
-            <tr>
-              <td style="padding:6px 14px; color:var(--ml-text-muted);">Tier 1 — <b>Premium</b><br><span style="font-size:11px;">más de S/ 75,000</span></td>
-              <td style="padding:6px 14px; text-align:right; font-weight:700; color:rgb(48,196,28);">S/ 999<small style="font-weight:400; color:var(--ml-text-muted);">/mes</small></td>
-            </tr>
-          </table>
-          <div style="padding:10px 14px 12px; border-top:1px solid rgba(48,196,28,0.15);">
-            <p style="margin:0 0 8px; font-size:12px; color:var(--ml-text-muted);">
-              El tier se asigna al inicio del programa y se mantiene por <strong style="color:var(--ml-text);">4 meses</strong> aunque tu nivel de ventas varíe durante ese período.
-            </p>
-            <p style="margin:0 0 8px; font-size:12px; color:var(--ml-text-muted);">
-              A mayor nivel de ventas, mayor es la complejidad de tu operación y el foco personalizado que recibe tu cuenta: <strong style="color:var(--ml-text);">el tier no solo refleja tu volumen, sino el nivel de atención, estrategia y seguimiento dedicado a tu negocio.</strong>
-            </p>
-            <p style="margin:0; font-size:11px; color:var(--ml-text-muted);">
-              El cobro se descuenta automáticamente cada mes desde tu cuenta de Mercado Pago. <em>Precios incluyen IGV.</em>
-            </p>
-          </div>
-        </div>
-        <div class="tier-price-sub" style="font-size: 14px; color: var(--ml-text);"><strong style="font-size: 14px;">Todo lo de ESENCIAL MÁS</strong></div>
+        <div class="tier-desc">Asesoría 360° para acelerar las palancas tácticas: catálogo, Flex, reputación y Ads.</div>
         <div class="tier-divider"></div>
-
-
-        <div class="tier-paragraphs">
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Especialización del asesor y cartera</div>
-            <ul class="tier-attr-bullets">
-              <li class="highlight">Analista Especializado por categoría</li>
-              <li>35–40 cuentas por asesor</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Plan de Trabajo</div>
-            <ul class="tier-attr-bullets">
-              <li class="highlight">Plan trimestral de ventas, seguimiento quincenal</li>
-              <li>Diagnóstico estandarizado no customizado</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Palancas Comerciales</div>
-            <ul class="tier-attr-bullets">
-              <li class="highlight">Cupos prioritarios en campañas</li>
-              <li>Prioridad de posicionamiento</li>
-              <li>Visibilidad en campañas</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Pilotos y Lanzamientos</div>
-            <ul class="tier-attr-bullets">
-              <li>Sesiones introductorias de contenido general</li>
-              <li>Segunda prioridad activación pilotos: Heavy &amp; Bulky, B2B, etc. Late access</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Gestión de Problemas y CX</div>
-            <ul class="tier-attr-bullets">
-              <li>Gestión del seller, apoyo puntual del asesor</li>
-              <li class="highlight">Escalamiento de casos ad-hoc, máximo 2 mensuales</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Seguimiento Logístico</div>
-            <ul class="tier-attr-bullets">
-              <li class="highlight">Asesoría básica Flex mediante asesor</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Seguimiento Publicidad (Ads)</div>
-            <ul class="tier-attr-bullets">
-              <li class="highlight">Asesoría CC+ básica (solo Product Ads) incluida</li>
-              <li>Sesión quincenal de asesoría Ads (30 min)</li>
-              <li>Orientación básica en campañas</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Seguimiento general de la cuenta</div>
-            <ul class="tier-attr-bullets">
-              <li class="highlight">Reunión 1:1 quincenal (30 min)</li>
-              <li>Comunicación activa por WhatsApp y mail</li>
-              <li class="dim">Sin reuniones adicionales</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Agenda de reunión</div>
-            <ul class="tier-attr-bullets">
-              <li class="highlight">Performance de alto nivel, sin detalle</li>
-              <li>Problemas críticos</li>
-              <li>Próximos pasos operativos</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Reporting</div>
-            <ul class="tier-attr-bullets">
-              <li>Reporte semanal automatizado (ventas, visitas, conversión)</li>
-              <li class="highlight">Acciones según alertas u oportunidades</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Comunicación y disponibilidad</div>
-            <ul class="tier-attr-bullets">
-              <li>Mail y WhatsApp con asesor</li>
-              <li class="dim">SLA no definido</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">KPIs observados</div>
-            <ul class="tier-attr-bullets">
-              <li>NMV (venta)</li>
-              <li>Visitas, conversión y precio promedio</li>
-            </ul>
-          </div>
-        </div>
-
+        <div class="tier-price">S/ 249 – S/ 999<small>/mes</small></div>
+        <div class="tier-price-sub">4 tiers según ventas promedio · vendedores desde S/ 10,000/mes</div>
         <div class="tier-cta">
-          <a href="#" class="btn btn-primary">Conocer Impacto</a>
+          <a href="#comparativo" class="btn btn-primary">Conocer Impacto</a>
         </div>
       </div>
 
       <!-- Profesional -->
       <div class="tier-card pro featured">
         <div class="tier-badge">Más recomendado</div>
-        <div class="tier-tag">Visión ecosistémica</div>
+        <span class="tier-level-badge">Nivel 3</span>
         <div class="tier-name" style="color: rgb(253, 220, 8);">Profesional</div>
-        <div class="tier-threshold" style="margin: 6px 0 10px; padding: 7px 14px; background: rgba(253,220,8,0.10); border-left: 3px solid rgb(253,220,8); border-radius: 6px;">
-          <div style="font-size:14px; font-weight:700; color: rgb(253,220,8); letter-spacing:0.01em;">Si vendes más de S/ 150,000, este es el programa de Asesoría que te corresponde.</div>
-        </div>
-        <div class="tier-desc"> <strong>Consultor de Negocios Especializado por Categoría, con visión integral y foco estratégico en el desarrollo de la categoría, que otorga mayor visibilidad y acceso premium a la gestión de Publicidad, entre otros beneficios.</strong></div>
-        <div class="tier-price" style="font-size: 32px; color: rgb(253, 220, 8);">desde S/ 3,220<small>/mes</small></div>
-        <div class="tier-price-sub">según complejidad de la cuenta</div>
-        <div class="tier-price-sub" style="font-size: 14px; color: var(--ml-text);"><strong>Todo lo de IMPACTO MÁS</strong></div>
-
+        <div class="tier-desc">Consultor de Negocios Especializado por Categoría, con visión integral y foco estratégico en el desarrollo de tu cuenta.</div>
         <div class="tier-divider"></div>
-
-        <div class="tier-paragraphs">
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Especialización del asesor y cartera</div>
-            <ul class="tier-attr-bullets">
-              <li class="highlight">Equipo senior: asesor, subgerente y gerente</li>
-              <li>Especialización por categoría</li>
-              <li>Máx. 15 cuentas por asesor</li>
-              <li>Relación cercana entre partes, con visitas a oficinas del seller</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Plan de Trabajo</div>
-            <ul class="tier-attr-bullets">
-              <li class="highlight">Plan anual y estrategia conjunta con la marca, seguimiento semanal</li>
-              <li>Diagnóstico interno completo + benchmarks de la industria y posición competitiva</li>
-              <li>Foco en adopción ecosistema Meli con accionables customizados para el seller</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Palancas Comerciales</div>
-            <ul class="tier-attr-bullets">
-              <li>Cupos exclusivos en campañas</li>
-              <li>Prioridad en posicionamiento</li>
-              <li class="highlight">Espacios de máxima prioridad para eventos clave (Black, Cyber, etc.) con push y mailing</li>
-              <li>Gráficas / medios exclusivos y posibilidad de RRSS</li>
-              <li>Apoyo intenso en campañas comerciales</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Pilotos y Lanzamientos</div>
-            <ul class="tier-attr-bullets">
-              <li>Sesiones profundas con detalle customizado</li>
-              <li class="highlight">Prioridad en nuevas funcionalidades y pilotos (Envíos Pesados, Fulfillment, etc.)</li>
-              <li>Apertura de nuevas categorías con data ad-hoc para el seller</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Gestión de Problemas y CX</div>
-            <ul class="tier-attr-bullets">
-              <li>Gestión del seller, apoyo activo del asesor</li>
-              <li>Escalamiento y seguimiento de casos constante</li>
-              <li class="highlight">Sin límite mensual de casos a escalar</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Seguimiento Logístico</div>
-            <ul class="tier-attr-bullets">
-              <li class="highlight">Asesoría logística completa mediante asesor (incluye gestión de reputación)</li>
-              <li>Gestión activa de penetración Flex (aumento de conversión)</li>
-              <li class="highlight">Bonificaciones Meli: Recolecta gratuita</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Seguimiento Publicidad (Ads)</div>
-            <ul class="tier-attr-bullets">
-              <li class="highlight">Asesoría en Publicidad Premium</li>
-              <li class="highlight">Carga de Clips Gratuito con agencia especializada</li>
-              <li>Sesión quincenal de asesoría Ads (30 min a 1 hora)</li>
-              <li>Asesor Ads optimizando ROAS de forma activa</li>
-              <li>Espacios priorizados y posibilidad de visibilidad adicional</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Seguimiento general de la cuenta</div>
-            <ul class="tier-attr-bullets">
-              <li class="highlight">Reunión 1:1 semanal (1 hora)</li>
-              <li>Comunicación activa por WhatsApp y mail</li>
-              <li>Reuniones adicionales ilimitadas a petición del seller o por oportunidad</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Agenda de reunión</div>
-            <ul class="tier-attr-bullets">
-              <li class="highlight">Performance detallado, problemas críticos, estrategia comercial y seguimiento del calendario comercial</li>
-              <li>Deep dive del ecosistema y adopción de palancas Meli</li>
-              <li>Lanzamiento de nuevas marcas, categorías y productos</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Reporting</div>
-            <ul class="tier-attr-bullets">
-              <li class="highlight">Reporting personalizado por seller apalancando data de Meli</li>
-              <li>Alta visibilidad (profundidad y frecuencia)</li>
-              <li>Deep dives y solicitudes específicas con data customizada</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Comunicación y disponibilidad</div>
-            <ul class="tier-attr-bullets">
-              <li>Mail y WhatsApp con asesor</li>
-              <li class="highlight">SLA: respuesta rápida y prioritaria</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">KPIs observados</div>
-            <ul class="tier-attr-bullets">
-              <li>NMV (venta)</li>
-              <li>Visitas, conversión y precio promedio</li>
-              <li>Competitividad, stock, Full / Flex, B2B, Ads</li>
-              <li class="highlight">KPIs customizados y personalizados por caso de negocio</li>
-            </ul>
-          </div>
-          <div class="tier-attr-group">
-            <div class="tier-attr-label">Beneficio Exclusivo</div>
-            <ul class="tier-attr-bullets">
-              <li class="highlight">Negociaciones de Precios y apoyo con descuentos en Campañas Comerciales</li>
-            </ul>
-          </div>
-        </div>
-
+        <div class="tier-price" style="color: rgb(253, 220, 8);">desde S/ 3,220<small>/mes</small></div>
+        <div class="tier-price-sub">Vendedores que venden o facturan más de S/ 100,000/mes</div>
         <div class="tier-cta">
-          <a href="#" class="btn btn-yellow">Postular a Profesional</a>
+          <a href="#comparativo" class="btn btn-yellow">Postular a Profesional</a>
         </div>
       </div>
 
+    </div>
+
+    <div class="tier-more-info-wrap" style="text-align:center; margin-top: 28px;">
+      <a href="#comparativo" class="btn btn-outline">Más información</a>
+    </div>
+
+    <!-- Detalle de precios Impacto (movido fuera de la tarjeta para simplificarla) -->
+    <div class="impacto-pricing-detail" style="margin: 40px auto 0; max-width: 760px; background: rgba(48,196,28,0.07); border: 1px solid rgba(48,196,28,0.25); border-radius: 12px; overflow: hidden;">
+      <div style="padding: 14px 20px 8px; font-size: 12px; font-weight: 700; color: rgb(48,196,28); text-transform: uppercase; letter-spacing: 0.06em; border-bottom: 1px solid rgba(48,196,28,0.15);">
+        Impacto · Precio según ventas promedio últimos 4 meses
+      </div>
+      <table style="width:100%; border-collapse:collapse; font-size:13px;">
+        <tr style="border-bottom:1px solid rgba(48,196,28,0.1);">
+          <td style="padding:8px 20px; color:var(--ml-text-muted);">Tier 4 — <b>Básico</b><br><span style="font-size:11px;">hasta S/ 25,000</span></td>
+          <td style="padding:8px 20px; text-align:right; font-weight:700; color:var(--ml-text);">S/ 249<small style="font-weight:400; color:var(--ml-text-muted);">/mes</small></td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(48,196,28,0.1);">
+          <td style="padding:8px 20px; color:var(--ml-text-muted);">Tier 3 — <b>Crecimiento</b><br><span style="font-size:11px;">S/ 25,001 – S/ 50,000</span></td>
+          <td style="padding:8px 20px; text-align:right; font-weight:700; color:var(--ml-text);">S/ 499<small style="font-weight:400; color:var(--ml-text-muted);">/mes</small></td>
+        </tr>
+        <tr style="border-bottom:1px solid rgba(48,196,28,0.1);">
+          <td style="padding:8px 20px; color:var(--ml-text-muted);">Tier 2 — <b>Avanzado</b><br><span style="font-size:11px;">S/ 50,001 – S/ 75,000</span></td>
+          <td style="padding:8px 20px; text-align:right; font-weight:700; color:var(--ml-text);">S/ 749<small style="font-weight:400; color:var(--ml-text-muted);">/mes</small></td>
+        </tr>
+        <tr>
+          <td style="padding:8px 20px; color:var(--ml-text-muted);">Tier 1 — <b>Premium</b><br><span style="font-size:11px;">más de S/ 75,000</span></td>
+          <td style="padding:8px 20px; text-align:right; font-weight:700; color:rgb(48,196,28);">S/ 999<small style="font-weight:400; color:var(--ml-text-muted);">/mes</small></td>
+        </tr>
+      </table>
+      <div style="padding:14px 20px 16px; border-top:1px solid rgba(48,196,28,0.15);">
+        <p style="margin:0 0 8px; font-size:12px; color:var(--ml-text-muted);">
+          El tier se asigna al inicio del programa y se mantiene por <strong style="color:var(--ml-text);">4 meses</strong> aunque tu nivel de ventas varíe durante ese período.
+        </p>
+        <p style="margin:0 0 8px; font-size:12px; color:var(--ml-text-muted);">
+          A mayor nivel de ventas, mayor es la complejidad de tu operación y el foco personalizado que recibe tu cuenta: <strong style="color:var(--ml-text);">el tier no solo refleja tu volumen, sino el nivel de atención, estrategia y seguimiento dedicado a tu negocio.</strong>
+        </p>
+        <p style="margin:0; font-size:11px; color:var(--ml-text-muted);">
+          El cobro se descuenta automáticamente cada mes desde tu cuenta de Mercado Pago. <em>Precios incluyen IGV.</em>
+        </p>
+      </div>
     </div>
 
     <div class="compare-cta-wrap">
       <button class="btn-compare" id="openCompareModal">Comparar modelos de asesoría</button>
-    </div>
-  </div>
-</section>
-
-<!-- ===== HELP / TESTIMONIALS ===== -->
-<section class="help-section">
-  <div class="container">
-    <div class="help-grid">
-      <div class="help-left">
-        <h2>¿Cómo te ayudan los programas de asesoría?</h2>
-        <p>
-          Tu asesor te acompaña a optimizar tu negocio en MercadoLibre para alcanzar tus objetivos
-          mediante orientación táctica, planificación estratégica y acceso a especialistas en cada
-          área del ecosistema.
-        </p>
-        <div class="help-features">
-          <div class="help-feature">
-            <svg class="help-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"></circle>
-              <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
-            </svg>
-            <div>
-              <h4>Orientación táctica</h4>
-              <p>Optimiza catálogo, Full, Ads, posicionamiento y participación en campañas clave del calendario comercial de MercadoLibre.</p>
-            </div>
-          </div>
-          <div class="help-feature">
-            <svg class="help-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-              <path d="M2 17l10 5 10-5"></path>
-              <path d="M2 12l10 5 10-5"></path>
-            </svg>
-            <div>
-              <h4>Planificación estratégica</h4>
-              <p>Recibe un plan de crecimiento personalizado y asesoramiento sobre cómo maximizar el potencial de las palancas y programas de Meli.</p>
-            </div>
-          </div>
-          <div class="help-feature">
-            <svg class="help-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M9 21h6"></path>
-              <path d="M12 17v4"></path>
-              <path d="M12 3a6 6 0 0 1 6 6c0 2.5-1.5 4.5-3 6-1 1-1 2-1 2H10s0-1-1-2c-1.5-1.5-3-3.5-3-6a6 6 0 0 1 6-6z"></path>
-            </svg>
-            <div>
-              <h4>Especialistas en la materia</h4>
-              <p>Conecta con expertos de Meli en logística, publicidad, atención al cliente y nuevas categorías para resolver problemas y abrir oportunidades.</p>
-            </div>
-          </div>
-        </div>
-        <a href="#contacto" class="help-link">Ver todos los casos de éxito</a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ===== HOW IT WORKS ===== -->
-<section id="como-funciona">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-eyebrow">Cómo funciona</div>
-      <h2 class="section-title">Del primer contacto al plan de crecimiento</h2>
-      <p class="section-subtitle">
-        Un proceso simple y transparente para que sepas exactamente qué esperar de tu asesoría.
-      </p>
-    </div>
-
-    <div class="how-grid">
-      <div class="how-step">
-        <div class="how-num">1</div>
-        <h3>Diagnóstico de tu cuenta</h3>
-        <p>Revisamos tu volumen, categorías y desempeño. Te ubicamos en el nivel adecuado según tu volumen de ventas mensual.</p>
-      </div>
-      <div class="how-step">
-        <div class="how-num">2</div>
-        <h3>Asignación de tu asesor</h3>
-        <p>Te asignamos un asesor con experiencia en tu vertical. En Profesional, un equipo senior (asesor, subgerente y gerente) especialista en tu categoría.</p>
-      </div>
-      <div class="how-step">
-        <div class="how-num">3</div>
-        <h3>Plan de crecimiento</h3>
-        <p>Construimos juntos el plan: comercial, operativo y estratégico. En Profesional incluye un Plan anual con la marca.</p>
-      </div>
-      <div class="how-step">
-        <div class="how-num">4</div>
-        <h3>Seguimiento y resultados</h3>
-        <p>Reuniones recurrentes, reporting y ajustes en tiempo real. Cada trimestre evaluamos si corresponde subir de nivel.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== PILLARS / BENEFITS ===== -->
-<section class="pillars" id="beneficios">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-eyebrow">Tres pilares de valor</div>
-      <h2 class="section-title">Todo lo que tu asesoría puede mover</h2>
-      <p class="section-subtitle">
-        Las palancas que activamos para que tu negocio venda más, opere mejor y crezca con foco estratégico.
-      </p>
-    </div>
-
-    <div class="pillar-grid">
-      <div class="pillar-card">
-        <div class="pillar-img commercial">
-          <span class="pillar-img-label">Comercial</span>
-        </div>
-        <div class="pillar-body">
-          <h3>Visibilidad y campañas</h3>
-          <p>Activamos las palancas que mueven tus ventas dentro del ecosistema MercadoLibre.</p>
-          <ul>
-            <li>Cupos en campañas comerciales</li>
-            <li>Posicionamiento priorizado vs. PADs</li>
-            <li>Push, mailing y medios digitales</li>
-            <li>Espacios de máxima prioridad en eventos clave (Profesional)</li>
-            <li>Gráficas y medios exclusivos (Profesional)</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="pillar-card">
-        <div class="pillar-img operational">
-          <span class="pillar-img-label">Operativo</span>
-        </div>
-        <div class="pillar-body">
-          <h3>Eficiencia y reputación</h3>
-          <p>Optimizamos cómo opera tu cuenta para proteger márgenes y experiencia.</p>
-          <ul>
-            <li>Gestión activa de penetración Full</li>
-            <li>Asesoría logística completa</li>
-            <li>Protección de reputación e indicadores CX</li>
-            <li>Bonificaciones de colecta y warehousing (Profesional)</li>
-            <li>Stock priorizado en killer items</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="pillar-card">
-        <div class="pillar-img strategy">
-          <span class="pillar-img-label">Estrategia</span>
-        </div>
-        <div class="pillar-body">
-          <h3>Crecimiento de largo plazo</h3>
-          <p>Construimos contigo el plan que te lleva al siguiente nivel.</p>
-          <ul>
-            <li>Asesor Ads activo optimizando ROAS</li>
-            <li>Heavy &amp; Bulky · piloto B2B</li>
-            <li>Apertura de nuevas categorías</li>
-            <li>Acceso a Data MeLi (intel competitivo)</li>
-            <li>Recuperación de venta CX</li>
-          </ul>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -1802,49 +1369,49 @@
             <td>Tu asesor<small>Especialización y seniority</small></td>
             <td>Analista multicategoría<br><span style="color:var(--ml-text-muted); font-size:12px;">Tu punto de soporte y contacto comercial dentro de Mercado Libre</span></td>
             <td><span class="check">✓</span> Asesor Comercial Especializado<br><span style="color:var(--ml-text-muted); font-size:12px;">Por categoría — conoce tu rubro a fondo, no solo tu cuenta</span></td>
-            <td><span class="check">✓</span> Equipo senior consultivo completo<br><span style="color:var(--ml-text-muted); font-size:12px;">Asesor + subgerente + gerente trabajando activamente en tu cuenta</span></td>
+            <td><span class="check">✓✓</span> Equipo senior consultivo completo<br><span style="color:var(--ml-text-muted); font-size:12px;">Asesor + subgerente + gerente trabajando activamente en tu cuenta</span></td>
           </tr>
           <tr>
             <td>Reuniones<small>Cadencia de seguimiento</small></td>
             <td>Reuniones mensuales<br><span style="color:var(--ml-text-muted); font-size:12px;">Recomendaciones puntuales, ad hoc</span></td>
             <td><span class="check">✓</span> 1:1 quincenal (30 min)<br><span style="color:var(--ml-text-muted); font-size:12px;">Seguimiento constante de tu cuenta, cada 2 semanas</span></td>
-            <td><span class="check">✓</span> 1:1 semanal (1h) + adicionales<br><span style="color:var(--ml-text-muted); font-size:12px;">Estrategia conjunta anual, con diagnóstico y benchmarks de tu categoría</span></td>
+            <td><span class="check">✓✓</span> 1:1 semanal (1h) + adicionales<br><span style="color:var(--ml-text-muted); font-size:12px;">Estrategia conjunta anual, con diagnóstico y benchmarks de tu categoría</span></td>
           </tr>
           <tr>
             <td>Alertas<small>Oportunidades detectadas en tu cuenta</small></td>
             <td>Alertas semanales automáticas por email<br><span style="color:var(--ml-text-muted); font-size:12px;">Reputación, stock, ofertas, más vendidos</span></td>
             <td><span class="check">✓</span> Mismas alertas + revisión personalizada<br><span style="color:var(--ml-text-muted); font-size:12px;">Tu asesor las revisa contigo en cada 1:1</span></td>
-            <td><span class="check">✓</span> Alertas + plan semanal accionable<br><span style="color:var(--ml-text-muted); font-size:12px;">Tu equipo consultivo convierte cada alerta en una acción concreta</span></td>
+            <td><span class="check">✓✓</span> Alertas + plan semanal accionable<br><span style="color:var(--ml-text-muted); font-size:12px;">Tu equipo consultivo convierte cada alerta en una acción concreta</span></td>
           </tr>
           <tr>
             <td>Soporte<small>Gestión de problemas y CX</small></td>
             <td>Autogestión</td>
             <td><span class="check">✓</span> Acompañamiento<br><span style="color:var(--ml-text-muted); font-size:12px;">Escalamiento puntual en situaciones críticas</span></td>
-            <td><span class="check">✓</span> Atención preferente, canal exclusivo<br><span style="color:var(--ml-text-muted); font-size:12px;">Escalamiento prioritario y sin límites</span></td>
+            <td><span class="check">✓✓</span> Atención preferente, canal exclusivo<br><span style="color:var(--ml-text-muted); font-size:12px;">Escalamiento prioritario y sin límites</span></td>
           </tr>
           <tr>
             <td>Información y data de mercado<small>Para decidir con datos, no con intuición</small></td>
             <td><span class="dash">—</span></td>
             <td><span class="dash">—</span></td>
-            <td><span class="check">✓</span> Reporte semanal con data de Mercado Libre<br><span style="color:var(--ml-text-muted); font-size:12px;">Información de mercado y categorías que tu competencia no tiene</span></td>
+            <td><span class="check">✓✓</span> Reporte semanal con data de Mercado Libre<br><span style="color:var(--ml-text-muted); font-size:12px;">Información de mercado y categorías que tu competencia no tiene</span></td>
           </tr>
           <tr>
             <td>Descuentos cofinanciados<small>Competitividad en precio</small></td>
             <td>Sin descuentos extra asumidos por Mercado Libre</td>
             <td><span class="check">✓</span> Algunos productos elegibles para descuentos cofinanciados<br><span style="color:var(--ml-text-muted); font-size:12px;">Mercado Libre asume parte del descuento para que compitan mejor en precio</span></td>
-            <td><span class="check">✓</span> Descuentos asegurados hasta 4% en tus top items<br><span style="color:var(--ml-text-muted); font-size:12px;">Con mayor cobertura de descuentos en tus productos</span></td>
+            <td><span class="check">✓✓</span> Descuentos asegurados hasta 4% en tus top items<br><span style="color:var(--ml-text-muted); font-size:12px;">Con mayor cobertura de descuentos en tus productos</span></td>
           </tr>
           <tr>
             <td>Publicidad<small>Inversión en Publicidad dentro de la plataforma</small></td>
             <td>Autogestión<br><span style="color:var(--ml-text-muted); font-size:12px;">Self-service</span></td>
             <td><span class="check">✓</span> Asesoría publicitaria quincenal con experto<br><span style="color:var(--ml-text-muted); font-size:12px;">Gratis si vendes +USD 5,000/mes; si no, desde S/ 180/mes</span></td>
-            <td><span class="check">✓</span> Asesoría Premium de Publicidad quincenal, sin mínimo de venta<br><span style="color:var(--ml-text-muted); font-size:12px;">Gratis para todos los del programa</span></td>
+            <td><span class="check">✓✓</span> Asesoría Premium de Publicidad quincenal, sin mínimo de venta<br><span style="color:var(--ml-text-muted); font-size:12px;">Gratis para todos los del programa</span></td>
           </tr>
           <tr>
             <td>Campañas y exposición<small>Visibilidad dentro y fuera de la plataforma para aumentar tu posicionamiento</small></td>
             <td>Aviso de campañas comerciales<br><span style="color:var(--ml-text-muted); font-size:12px;">Cyber, Navidad, Black Friday, fechas dobles</span></td>
             <td><span class="check">✓</span> Cupos asegurados en exposición<br><span style="color:var(--ml-text-muted); font-size:12px;">Espacio garantizado dentro de las campañas</span></td>
-            <td><span class="check">✓</span> Espacios prioritarios exclusivos<br><span style="color:var(--ml-text-muted); font-size:12px;">Dentro y fuera de la plataforma (Medios de TV, Offline)</span></td>
+            <td><span class="check">✓✓</span> Espacios prioritarios exclusivos<br><span style="color:var(--ml-text-muted); font-size:12px;">Dentro y fuera de la plataforma (Medios de TV, Offline)</span></td>
           </tr>
           <tr>
             <td>Colecta</td>
@@ -1856,7 +1423,7 @@
             <td>Nuevas funcionalidades<small>Entérate de los nuevos lanzamientos y sé de los primeros en probarlas</small></td>
             <td>Webinars educativos<br><span style="color:var(--ml-text-muted); font-size:12px;">Te enteras cuando la funcionalidad ya está disponible para todos</span></td>
             <td>Webinars educativos<br><span style="color:var(--ml-text-muted); font-size:12px;">Te enteras cuando la funcionalidad ya está disponible para todos</span></td>
-            <td><span class="check">✓</span> Prioridad Exclusiva<br><span style="color:var(--ml-text-muted); font-size:12px;">Primero en probar funcionalidades y pilotos clave, antes que el resto</span></td>
+            <td><span class="check">✓✓</span> Prioridad Exclusiva<br><span style="color:var(--ml-text-muted); font-size:12px;">Primero en probar funcionalidades y pilotos clave, antes que el resto</span></td>
           </tr>
           <tr class="price-row">
             <td>Precio (incluye IGV)</td>
@@ -2599,6 +2166,160 @@
     </div>
   </div>
 </div>
+
+<!-- ===== HELP / TESTIMONIALS ===== -->
+<section class="help-section">
+  <div class="container">
+    <div class="help-grid">
+      <div class="help-left">
+        <h2>¿Cómo te ayudan los programas de asesoría?</h2>
+        <p>
+          Tu asesor te acompaña a optimizar tu negocio en MercadoLibre para alcanzar tus objetivos
+          mediante orientación táctica, planificación estratégica y acceso a especialistas en cada
+          área del ecosistema.
+        </p>
+        <div class="help-features">
+          <div class="help-feature">
+            <svg class="help-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+            </svg>
+            <div>
+              <h4>Orientación táctica</h4>
+              <p>Optimiza catálogo, Full, Ads, posicionamiento y participación en campañas clave del calendario comercial de MercadoLibre.</p>
+            </div>
+          </div>
+          <div class="help-feature">
+            <svg class="help-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path d="M2 17l10 5 10-5"></path>
+              <path d="M2 12l10 5 10-5"></path>
+            </svg>
+            <div>
+              <h4>Planificación estratégica</h4>
+              <p>Recibe un plan de crecimiento personalizado y asesoramiento sobre cómo maximizar el potencial de las palancas y programas de Meli.</p>
+            </div>
+          </div>
+          <div class="help-feature">
+            <svg class="help-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 21h6"></path>
+              <path d="M12 17v4"></path>
+              <path d="M12 3a6 6 0 0 1 6 6c0 2.5-1.5 4.5-3 6-1 1-1 2-1 2H10s0-1-1-2c-1.5-1.5-3-3.5-3-6a6 6 0 0 1 6-6z"></path>
+            </svg>
+            <div>
+              <h4>Especialistas en la materia</h4>
+              <p>Conecta con expertos de Meli en logística, publicidad, atención al cliente y nuevas categorías para resolver problemas y abrir oportunidades.</p>
+            </div>
+          </div>
+        </div>
+        <a href="#contacto" class="help-link">Ver todos los casos de éxito</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section id="como-funciona">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Cómo funciona</div>
+      <h2 class="section-title">Del primer contacto al plan de crecimiento</h2>
+      <p class="section-subtitle">
+        Un proceso simple y transparente para que sepas exactamente qué esperar de tu asesoría.
+      </p>
+    </div>
+
+    <div class="how-grid">
+      <div class="how-step">
+        <div class="how-num">1</div>
+        <h3>Diagnóstico de tu cuenta</h3>
+        <p>Revisamos tu volumen, categorías y desempeño. Te ubicamos en el nivel adecuado según tu volumen de ventas mensual.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-num">2</div>
+        <h3>Asignación de tu asesor</h3>
+        <p>Te asignamos un asesor con experiencia en tu vertical. En Profesional, un equipo senior (asesor, subgerente y gerente) especialista en tu categoría.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-num">3</div>
+        <h3>Plan de crecimiento</h3>
+        <p>Construimos juntos el plan: comercial, operativo y estratégico. En Profesional incluye un Plan anual con la marca.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-num">4</div>
+        <h3>Seguimiento y resultados</h3>
+        <p>Reuniones recurrentes, reporting y ajustes en tiempo real. Cada trimestre evaluamos si corresponde subir de nivel.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PILLARS / BENEFITS ===== -->
+<section class="pillars" id="beneficios">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Tres pilares de valor</div>
+      <h2 class="section-title">Todo lo que tu asesoría puede mover</h2>
+      <p class="section-subtitle">
+        Las palancas que activamos para que tu negocio venda más, opere mejor y crezca con foco estratégico.
+      </p>
+    </div>
+
+    <div class="pillar-grid">
+      <div class="pillar-card">
+        <div class="pillar-img commercial">
+          <span class="pillar-img-label">Comercial</span>
+        </div>
+        <div class="pillar-body">
+          <h3>Visibilidad y campañas</h3>
+          <p>Activamos las palancas que mueven tus ventas dentro del ecosistema MercadoLibre.</p>
+          <ul>
+            <li>Cupos en campañas comerciales</li>
+            <li>Posicionamiento priorizado vs. PADs</li>
+            <li>Push, mailing y medios digitales</li>
+            <li>Espacios de máxima prioridad en eventos clave (Profesional)</li>
+            <li>Gráficas y medios exclusivos (Profesional)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-img operational">
+          <span class="pillar-img-label">Operativo</span>
+        </div>
+        <div class="pillar-body">
+          <h3>Eficiencia y reputación</h3>
+          <p>Optimizamos cómo opera tu cuenta para proteger márgenes y experiencia.</p>
+          <ul>
+            <li>Gestión activa de penetración Full</li>
+            <li>Asesoría logística completa</li>
+            <li>Protección de reputación e indicadores CX</li>
+            <li>Bonificaciones de colecta y warehousing (Profesional)</li>
+            <li>Stock priorizado en killer items</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-img strategy">
+          <span class="pillar-img-label">Estrategia</span>
+        </div>
+        <div class="pillar-body">
+          <h3>Crecimiento de largo plazo</h3>
+          <p>Construimos contigo el plan que te lleva al siguiente nivel.</p>
+          <ul>
+            <li>Asesor Ads activo optimizando ROAS</li>
+            <li>Heavy &amp; Bulky · piloto B2B</li>
+            <li>Apertura de nuevas categorías</li>
+            <li>Acceso a Data MeLi (intel competitivo)</li>
+            <li>Recuperación de venta CX</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ===== FAQ ===== -->
 <section id="faq" style="background: var(--ml-bg-soft);">
