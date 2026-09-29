@@ -675,38 +675,84 @@
     width: 100%;
     border-collapse: collapse;
     font-size: 14px;
+    table-layout: fixed;
   }
   thead {
-    background: linear-gradient(135deg, #2D3277 0%, #1d2360 100%);
-    color: white;
+    background: #FFFFFF;
+    color: var(--ml-text);
   }
   thead th {
-    padding: 22px 20px;
+    padding: 10px 10px 16px;
     text-align: left;
-    font-weight: 700;
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     vertical-align: top;
   }
-  thead th:nth-child(2) { text-align: center; }
-  thead th:nth-child(3) { text-align: center; background: rgba(52, 131, 250, 0.3); }
+  thead th:first-child {
+    padding: 16px 22px;
+    vertical-align: middle;
+  }
+  thead th:nth-child(2),
+  thead th:nth-child(3),
   thead th:nth-child(4) {
     text-align: center;
-    background: var(--ml-yellow);
-    color: #2D3277;
   }
-  thead th small {
+  .comparativo-intro {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--ml-text);
+    font-weight: 400;
+  }
+  .comparativo-eyebrow {
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--ml-text-light);
+    min-height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .comparativo-eyebrow.pro-eyebrow {
+    color: #2D3277;
+    font-weight: 800;
+  }
+  .comparativo-th-box {
+    border-radius: 10px;
+    padding: 16px 14px 18px;
+    margin: 0 2px;
+    min-height: 132px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .comparativo-th-icon {
+    font-size: 22px;
+    line-height: 1;
     display: block;
+    margin-bottom: 6px;
+  }
+  .comparativo-th-title {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.25;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+  .comparativo-th-sub {
     font-size: 11px;
     font-weight: 500;
     text-transform: none;
     letter-spacing: 0;
-    opacity: 0.85;
-    margin-top: 4px;
+    margin-top: 6px;
+    line-height: 1.35;
+    opacity: 0.92;
   }
   tbody td {
-    padding: 18px 20px;
+    padding: 16px 20px;
     border-bottom: 1px solid var(--ml-border);
     color: var(--ml-text);
     vertical-align: top;
@@ -729,13 +775,21 @@
     font-size: 13px;
     line-height: 1.5;
   }
-  tbody tr:hover { background: var(--ml-bg-soft); }
+  tbody tr:not(.price-row):nth-child(even) td { background: #F7F8FA; }
+  tbody tr:hover td { background: var(--ml-bg-soft); }
   tbody tr.price-row td {
-    background: #FFFEF2;
+    background: var(--ml-bg-blue);
     font-weight: 700;
     font-size: 15px;
   }
   .check { color: var(--ml-green); font-weight: 800; font-size: 18px; margin-right: 4px; }
+  .check-pro {
+    background: rgba(255, 230, 0, 0.4);
+    border-radius: 5px;
+    padding: 2px 7px;
+    margin-right: 4px;
+    display: inline-block;
+  }
   .dash { color: var(--ml-text-light); font-size: 16px; }
 
   .compare-cta-wrap {
@@ -1274,7 +1328,7 @@
         <div class="tier-name" style="color: rgb(48, 196, 28);">Impacto</div>
         <div class="tier-desc">Asesoría 360° para acelerar las palancas tácticas: catálogo, Flex, reputación y Ads.</div>
         <div class="tier-divider"></div>
-        <div class="tier-price">S/ 249 – S/ 999<small>/mes</small></div>
+        <div class="tier-price" style="color: rgb(48, 196, 28);">S/ 249 – S/ 999<small>/mes</small></div>
         <div class="tier-price-sub">4 tiers según ventas promedio · vendedores desde S/ 10,000/mes</div>
         <div class="tier-cta">
           <a href="#comparativo" class="btn btn-primary">Conocer Impacto</a>
@@ -1356,12 +1410,39 @@
 
     <div class="comparison-table">
       <table>
+        <colgroup>
+          <col style="width: 28%;">
+          <col style="width: 24%;">
+          <col style="width: 24%;">
+          <col style="width: 24%;">
+        </colgroup>
         <thead>
           <tr>
-            <th>Atributo</th>
-            <th style="font-size: 18px;">Esencial<small>Gratuito</small></th>
-            <th style="font-size: 18px;">Impacto<small style="font-weight: 800; font-size: 14px;">S/ 249 – S/ 999 / mes</small><small style="color: rgb(255, 255, 255); font-weight: 700; font-size: 12px; display: block;">4 tiers según ventas promedio · desde S/ 10,000/mes</small></th>
-            <th style="font-size: 18px;">Profesional<small style="font-weight: 800; font-size: 14px;">desde S/ 3,220 / mes</small><small style="color: var(--ml-text-muted); font-weight: 800; font-size: 12px; display: block;">Vendedores que venden o facturan más de S/ 100,000/mes</small></th>
+            <th class="comparativo-intro">Te <strong>acompañamos</strong> a evolucionar. A mayor potencial es necesario <strong>mayor personalización</strong> en el acompañamiento.</th>
+            <th>
+              <div class="comparativo-eyebrow">Para empezar</div>
+              <div class="comparativo-th-box" style="background: rgb(45,57,118);">
+                <span class="comparativo-th-icon">📈</span>
+                <div class="comparativo-th-title" style="color:#FFFFFF;">Esencial</div>
+                <div class="comparativo-th-sub" style="color:#FFFFFF;">Gratuito</div>
+              </div>
+            </th>
+            <th>
+              <div class="comparativo-eyebrow">Aceleración táctica</div>
+              <div class="comparativo-th-box" style="background: rgb(48,196,28);">
+                <span class="comparativo-th-icon">🚀</span>
+                <div class="comparativo-th-title" style="color:#FFFFFF;">Meli Acelera Impacto</div>
+                <div class="comparativo-th-sub" style="color:#FFFFFF;">Desde S/ 249/mes hasta S/ 999/mes *según tu nivel de venta mensual</div>
+              </div>
+            </th>
+            <th>
+              <div class="comparativo-eyebrow pro-eyebrow">★ Más recomendado</div>
+              <div class="comparativo-th-box" style="background: rgb(253,220,8);">
+                <span class="comparativo-th-icon">🏆</span>
+                <div class="comparativo-th-title" style="color:#2D3277;">Meli Acelera Profesional</div>
+                <div class="comparativo-th-sub" style="color:#2D3277;">S/ 3,220 / mes (inc. IGV)</div>
+              </div>
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -1369,67 +1450,61 @@
             <td>Tu asesor<small>Especialización y seniority</small></td>
             <td>Analista multicategoría<br><span style="color:var(--ml-text-muted); font-size:12px;">Tu punto de soporte y contacto comercial dentro de Mercado Libre</span></td>
             <td><span class="check">✓</span> Asesor Comercial Especializado<br><span style="color:var(--ml-text-muted); font-size:12px;">Por categoría — conoce tu rubro a fondo, no solo tu cuenta</span></td>
-            <td><span class="check">✓✓</span> Equipo senior consultivo completo<br><span style="color:var(--ml-text-muted); font-size:12px;">Asesor + subgerente + gerente trabajando activamente en tu cuenta</span></td>
+            <td><span class="check check-pro">✓✓</span> Equipo senior consultivo completo<br><span style="color:var(--ml-text-muted); font-size:12px;">Asesor + subgerente + gerente trabajando activamente en tu cuenta</span></td>
           </tr>
           <tr>
-            <td>Reuniones<small>Cadencia de seguimiento</small></td>
+            <td>Reuniones<small>Frecuencia de seguimiento</small></td>
             <td>Reuniones mensuales<br><span style="color:var(--ml-text-muted); font-size:12px;">Recomendaciones puntuales, ad hoc</span></td>
             <td><span class="check">✓</span> 1:1 quincenal (30 min)<br><span style="color:var(--ml-text-muted); font-size:12px;">Seguimiento constante de tu cuenta, cada 2 semanas</span></td>
-            <td><span class="check">✓✓</span> 1:1 semanal (1h) + adicionales<br><span style="color:var(--ml-text-muted); font-size:12px;">Estrategia conjunta anual, con diagnóstico y benchmarks de tu categoría</span></td>
+            <td><span class="check check-pro">✓✓</span> 1:1 semanal (1h) + adicionales<br><span style="color:var(--ml-text-muted); font-size:12px;">Estrategia conjunta anual, con diagnóstico y benchmarks de tu categoría</span></td>
           </tr>
           <tr>
             <td>Alertas<small>Oportunidades detectadas en tu cuenta</small></td>
             <td>Alertas semanales automáticas por email<br><span style="color:var(--ml-text-muted); font-size:12px;">Reputación, stock, ofertas, más vendidos</span></td>
             <td><span class="check">✓</span> Mismas alertas + revisión personalizada<br><span style="color:var(--ml-text-muted); font-size:12px;">Tu asesor las revisa contigo en cada 1:1</span></td>
-            <td><span class="check">✓✓</span> Alertas + plan semanal accionable<br><span style="color:var(--ml-text-muted); font-size:12px;">Tu equipo consultivo convierte cada alerta en una acción concreta</span></td>
+            <td><span class="check check-pro">✓✓</span> Alertas + plan semanal accionable<br><span style="color:var(--ml-text-muted); font-size:12px;">Tu equipo consultivo convierte cada alerta en una acción concreta</span></td>
           </tr>
           <tr>
             <td>Soporte<small>Gestión de problemas y CX</small></td>
             <td>Autogestión</td>
             <td><span class="check">✓</span> Acompañamiento<br><span style="color:var(--ml-text-muted); font-size:12px;">Escalamiento puntual en situaciones críticas</span></td>
-            <td><span class="check">✓✓</span> Atención preferente, canal exclusivo<br><span style="color:var(--ml-text-muted); font-size:12px;">Escalamiento prioritario y sin límites</span></td>
+            <td><span class="check check-pro">✓✓</span> Atención preferente, canal exclusivo<br><span style="color:var(--ml-text-muted); font-size:12px;">Escalamiento prioritario y sin límites</span></td>
           </tr>
           <tr>
             <td>Información y data de mercado<small>Para decidir con datos, no con intuición</small></td>
             <td><span class="dash">—</span></td>
             <td><span class="dash">—</span></td>
-            <td><span class="check">✓✓</span> Reporte semanal con data de Mercado Libre<br><span style="color:var(--ml-text-muted); font-size:12px;">Información de mercado y categorías que tu competencia no tiene</span></td>
+            <td><span class="check check-pro">✓✓</span> Reporte semanal con data de Mercado Libre<br><span style="color:var(--ml-text-muted); font-size:12px;">Información de mercado y categorías que tu competencia no tiene</span></td>
           </tr>
           <tr>
             <td>Descuentos cofinanciados<small>Competitividad en precio</small></td>
             <td>Sin descuentos extra asumidos por Mercado Libre</td>
-            <td><span class="check">✓</span> Algunos productos elegibles para descuentos cofinanciados<br><span style="color:var(--ml-text-muted); font-size:12px;">Mercado Libre asume parte del descuento para que compitan mejor en precio</span></td>
-            <td><span class="check">✓✓</span> Descuentos asegurados hasta 4% en tus top items<br><span style="color:var(--ml-text-muted); font-size:12px;">Con mayor cobertura de descuentos en tus productos</span></td>
+            <td><span class="check">✓</span> Algunos de tus productos son elegibles para descuentos cofinanciados<br><span style="color:var(--ml-text-muted); font-size:12px;">Mercado Libre asume parte del descuento para que compitan mejor en precio</span></td>
+            <td><span class="check check-pro">✓✓</span> Descuentos asegurados hasta 4% en tus top items<br><span style="color:var(--ml-text-muted); font-size:12px;">Con mayor cobertura de descuentos en tus productos</span></td>
           </tr>
           <tr>
             <td>Publicidad<small>Inversión en Publicidad dentro de la plataforma</small></td>
             <td>Autogestión<br><span style="color:var(--ml-text-muted); font-size:12px;">Self-service</span></td>
             <td><span class="check">✓</span> Asesoría publicitaria quincenal con experto<br><span style="color:var(--ml-text-muted); font-size:12px;">Gratis si vendes +USD 5,000/mes; si no, desde S/ 180/mes</span></td>
-            <td><span class="check">✓✓</span> Asesoría Premium de Publicidad quincenal, sin mínimo de venta<br><span style="color:var(--ml-text-muted); font-size:12px;">Gratis para todos los del programa</span></td>
+            <td><span class="check check-pro">✓✓</span> Asesoría Premium de Publicidad quincenal, sin mínimo de venta<br><span style="color:var(--ml-text-muted); font-size:12px;">Gratis para todos los del programa</span></td>
+          </tr>
+          <tr>
+            <td>Recolección de Pedidos<small>Coordinación del recojo de pedidos de tu almacén</small></td>
+            <td><span class="dash">—</span></td>
+            <td><span class="check">✓</span> Activación de Colecta si vendes más de 5 órdenes al día<br><span style="color:var(--ml-text-muted); font-size:12px;">Recogemos los productos de tu almacén</span></td>
+            <td><span class="check check-pro">✓✓</span> Activación de Colecta sin mínimo de órdenes al día<br><span style="color:var(--ml-text-muted); font-size:12px;">Recogemos los productos de tu almacén</span></td>
           </tr>
           <tr>
             <td>Campañas y exposición<small>Visibilidad dentro y fuera de la plataforma para aumentar tu posicionamiento</small></td>
             <td>Aviso de campañas comerciales<br><span style="color:var(--ml-text-muted); font-size:12px;">Cyber, Navidad, Black Friday, fechas dobles</span></td>
             <td><span class="check">✓</span> Cupos asegurados en exposición<br><span style="color:var(--ml-text-muted); font-size:12px;">Espacio garantizado dentro de las campañas</span></td>
-            <td><span class="check">✓✓</span> Espacios prioritarios exclusivos<br><span style="color:var(--ml-text-muted); font-size:12px;">Dentro y fuera de la plataforma (Medios de TV, Offline)</span></td>
-          </tr>
-          <tr>
-            <td>Colecta</td>
-            <td><span class="dash">—</span></td>
-            <td>Activación de Colecta si vendes más de 5 órdenes al día<br><span style="color:var(--ml-text-muted); font-size:12px;">Recogemos los productos de tu almacén</span></td>
-            <td>Activación de Colecta sin mínimo de órdenes al día<br><span style="color:var(--ml-text-muted); font-size:12px;">Recogemos los productos de tu almacén</span></td>
-          </tr>
-          <tr>
-            <td>Nuevas funcionalidades<small>Entérate de los nuevos lanzamientos y sé de los primeros en probarlas</small></td>
-            <td>Webinars educativos<br><span style="color:var(--ml-text-muted); font-size:12px;">Te enteras cuando la funcionalidad ya está disponible para todos</span></td>
-            <td>Webinars educativos<br><span style="color:var(--ml-text-muted); font-size:12px;">Te enteras cuando la funcionalidad ya está disponible para todos</span></td>
-            <td><span class="check">✓✓</span> Prioridad Exclusiva<br><span style="color:var(--ml-text-muted); font-size:12px;">Primero en probar funcionalidades y pilotos clave, antes que el resto</span></td>
+            <td><span class="check check-pro">✓✓</span> Espacios prioritarios exclusivos<br><span style="color:var(--ml-text-muted); font-size:12px;">Dentro y fuera de la plataforma (Medios de TV, Offline)</span></td>
           </tr>
           <tr class="price-row">
             <td>Precio (incluye IGV)</td>
             <td>Gratuito</td>
-            <td>S/ 249 – S/ 999 / mes<br><small style="color:var(--ml-text-muted); font-size:11px;">4 tiers según ventas promedio</small></td>
-            <td>desde S/ 3,220 / mes</td>
+            <td>S/ 249 – S/ 999 / mes</td>
+            <td>Desde S/ 3,220 / mes</td>
           </tr>
         </tbody>
       </table>
